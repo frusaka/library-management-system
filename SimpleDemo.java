@@ -1,12 +1,12 @@
 public class SimpleDemo {
     public static void main(String[] args) {
         System.out.println("╔══════════════════════════════════════════════════════════╗");
-        System.out.println("║            🏛️ LIBRARY MANAGEMENT SYSTEM 🏛️             ║");
+        System.out.println("║            🏛️ LIBRARY MANAGEMENT SYSTEM 🏛️               ║");
         System.out.println("╚══════════════════════════════════════════════════════════╝");
         System.out.println();
         
         System.out.println("┌────────────────────────────────────────────────┐");
-        System.out.println("│         📋 OPTION 2: MEMBER MANAGEMENT        │");
+        System.out.println("│         📋 OPTION 2: MEMBER MANAGEMENT         │");
         System.out.println("└────────────────────────────────────────────────┘");
         System.out.println();
         
@@ -16,7 +16,7 @@ public class SimpleDemo {
     
     public static void demonstrateMemberManagement() {
         System.out.println("╔══════════════════════════════════════════════════════════╗");
-        System.out.println("║                1️⃣ DISPLAY ALL MEMBERS                   ║");
+        System.out.println("║                1️⃣ DISPLAY ALL MEMBERS                    ║");
         System.out.println("╚══════════════════════════════════════════════════════════╝");
         
         System.out.println("┌──────────┬──────────────────┬──────────────┬────────────┐");
@@ -31,7 +31,7 @@ public class SimpleDemo {
         System.out.println("\n" + "═".repeat(60) + "\n");
         
         System.out.println("╔══════════════════════════════════════════════════════════╗");
-        System.out.println("║                  2️⃣ ADD NEW MEMBER                      ║");
+        System.out.println("║                  2️⃣ ADD NEW MEMBER                       ║");
         System.out.println("╚══════════════════════════════════════════════════════════╝");
         
         System.out.println("➕ Adding new Premium member...");
@@ -42,18 +42,18 @@ public class SimpleDemo {
         System.out.println("│ ID: M004                                        │");
         System.out.println("│ Name: Sarah Wilson                              │");
         System.out.println("│ Email: sarah.wilson@email.com                   │");
-        System.out.println("│ Phone: 555-987-6543                            │");
+        System.out.println("│ Phone: 555-987-6543                             │");
         System.out.println("│ Address: 456 University Ave                     │");
         System.out.println("│ Type: Premium                                   │");
         System.out.println("│ Max Books: 10                                   │");
-        System.out.println("│ Join Date: 2025-01-18                          │");
+        System.out.println("│ Join Date: 2025-01-18                           │");
         System.out.println("└─────────────────────────────────────────────────┘");
         System.out.println("✅ Member added successfully!");
         
         System.out.println("\n" + "═".repeat(60) + "\n");
         
         System.out.println("╔══════════════════════════════════════════════════════════╗");
-        System.out.println("║               3️⃣ SEARCH MEMBER BY ID                    ║");
+        System.out.println("║               3️⃣ SEARCH MEMBER BY ID                     ║");
         System.out.println("╚══════════════════════════════════════════════════════════╝");
         
         System.out.println("🔍 Searching for member with ID: M002");
@@ -78,7 +78,7 @@ public class SimpleDemo {
         System.out.println("\n" + "═".repeat(60) + "\n");
         
         System.out.println("╔══════════════════════════════════════════════════════════╗");
-        System.out.println("║              4️⃣ UPDATED MEMBER LIST                     ║");
+        System.out.println("║              4️⃣ UPDATED MEMBER LIST                      ║");
         System.out.println("╚══════════════════════════════════════════════════════════╝");
         
         System.out.println("┌──────────┬──────────────────┬──────────────┬────────────┐");

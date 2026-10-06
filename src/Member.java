@@ -5,7 +5,7 @@ import java.util.List;
  * Member class extending Person - demonstrates inheritance
  * Represents library members who can borrow books
  */
-public class Member extends Person {
+public class Member extends Person implements LibraryEntinty {
     private String membershipDate;
     private List<String> issuedBooks;
     private int maxBooksAllowed;

@@ -1,0 +1,3 @@
+ID: M001 | Name: John Doe | Role: Member (Regular) | Email: john@email.com
+ID: M002 | Name: Jane Smith | Role: Member (Premium) | Email: jane@email.com
+ID: M003 | Name: Bob Johnson | Role: Member (Student) | Email: bob@email.com

@@ -2,7 +2,7 @@
  * Librarian class extending Person - demonstrates inheritance
  * Represents library staff with administrative privileges
  */
-public class Librarian extends Person {
+public class Librarian extends Person implements LibraryEntinty {
     private String employeeId;
     private String department;
     private String joinDate;

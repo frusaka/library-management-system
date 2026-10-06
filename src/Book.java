@@ -2,7 +2,7 @@
  * Book class representing a book in the library
  * Demonstrates encapsulation and data modeling
  */
-public class Book {
+public class Book implements LibraryEntinty {
     private String bookId;
     private String title;
     private String author;

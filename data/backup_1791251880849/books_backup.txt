@@ -1,0 +1,5 @@
+ID: B001 | Title: Java Programming | Author: James Gosling | Category: Programming | Status: Available
+ID: B002 | Title: Data Structures | Author: Robert Lafore | Category: Computer Science | Status: Available
+ID: B003 | Title: Clean Code | Author: Robert Martin | Category: Programming | Status: Available
+ID: B004 | Title: Design Patterns | Author: Gang of Four | Category: Software Engineering | Status: Available
+ID: B005 | Title: Algorithms | Author: Thomas Cormen | Category: Computer Science | Status: Available

@@ -250,6 +250,10 @@ public class LibraryManagementApp {
         System.out.println();
         
         String bookId = getStringInput("Enter Book ID: ");
+        while (library.findBookById(bookId) != null) {
+            displayErrorBox("Book ID already exists!");
+            bookId = getStringInput("Enter Book ID: ");
+        }
         String title = getStringInput("Enter Book Title: ");
         String author = getStringInput("Enter Author Name: ");
         String category = getStringInput("Enter Category: ");
@@ -281,6 +285,10 @@ public class LibraryManagementApp {
         System.out.println("═════════════════");
         
         String memberId = getStringInput("Enter Member ID: ");
+        while (library.findMemberById(memberId) != null) {
+            displayErrorBox("Member ID already exists!");
+            memberId = getStringInput("Enter Member ID: ");
+        }
         String name = getStringInput("Enter Member Name: ");
         String email = getStringInput("Enter Email: ");
         String phone = getStringInput("Enter Phone: ");
@@ -321,6 +329,10 @@ public class LibraryManagementApp {
         System.out.println("═══════════════════");
         
         String librarianId = getStringInput("Enter Librarian ID: ");
+        while (library.findLibrarianById(librarianId) != null) {
+            displayErrorBox("Librarian ID already exists!");
+            librarianId = getStringInput("Enter Librarian ID: ");
+        }
         String name = getStringInput("Enter Name: ");
         String email = getStringInput("Enter Email: ");
         String phone = getStringInput("Enter Phone: ");
@@ -559,7 +571,9 @@ public class LibraryManagementApp {
     
     private static void printMenuBox(String[] options, String title) {
         int width = 50;
-        
+        for (String option : options) {
+            width = Math.max(width, option.length());
+        }
         System.out.println("┌" + "─".repeat(width - 2) + "┐");
         
         // Title

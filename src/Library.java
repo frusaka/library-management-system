@@ -24,9 +24,9 @@ public class Library {
     
     // Load all data from files
     public void loadAllData() {
-        books = FileHandler.loadBooks();
-        members = FileHandler.loadMembers();
-        librarians = FileHandler.loadLibrarians();
+        books = FileHandler.load(Book.class);
+        members = FileHandler.load(Member.class);
+        librarians = FileHandler.load(Librarian.class);
         
         System.out.println("📚 Data loaded successfully!");
         System.out.println("Books: " + books.size() + " | Members: " + members.size() + " | Librarians: " + librarians.size());
@@ -35,9 +35,9 @@ public class Library {
     // Save all data to files
     public boolean saveAllData() {
         boolean success = true;
-        success &= FileHandler.saveBooks(books);
-        success &= FileHandler.saveMembers(members);
-        success &= FileHandler.saveLibrarians(librarians);
+        success &= FileHandler.save(books);
+        success &= FileHandler.save(members);
+        success &= FileHandler.save(librarians);
         
         if (success) {
             System.out.println("✅ All data saved successfully!");

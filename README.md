@@ -7,6 +7,22 @@
 
 A comprehensive **Library Management System** built using Object-Oriented Programming principles in Java. This project demonstrates **classes, inheritance, polymorphism, encapsulation, and file handling** for managing books, members, and library operations.
 
+## Reading Reflection
+The author argues that AI has not solved coding. He claims that the less people know about AI, the more they overstate its capability. He mentions how AI is a multiplier of stupidity for the stupid and smartness for the smart. I disagree with him on the point of AI first needing to learn from experience in order to get to the capacity of a good developer. We are seeing AI do more and more impressive things like solving math problems, recreating entire cities, and generating solid code especially for ideas. Though he argued some of these achievements were exagerrated or hardcorded, AI will soon surpass the expertise of many entry level developers. I don't fully get his stance on how good AI is because he mentioned how new developers will need to have skills on top of AI to not be redundant while still saying that AI is novice. So I agree that it's becoming evermore important to have skills better than AI for more critical software and in a larger development pipeline.
+
+## Testing and Documentation
+NOTE: I found it difficult to add a new feature, but I was able to make some changes that made the code less redundant.
+- Deleted some files in the root directory that were already in `./src` because I don't need them for my use case.
+- Fixed the error when displaying checked-out books.
+- Modified `LibraryManagement.java`'s `addNewBook`, `addNewMember`, and `addNewLibrarian` methods to preemptively check if the inputed ID already exists to reduce frustrations of filling out a full form just to be rejected for having one field wrong.
+- Created a `LibraryEntity` interface to streamline loading and saving functionality
+- Implemented the `LibraryEntity` interface in the `Member`, `Librarian`, and `Book` classes.
+- Changed `FileHandler.java`'s save and load methods to accept a generic `LibraryEntity` input which reduces the amount of duplicate code
+- Deleted redundant implicit overloads of saving/loading functionality for books, librarians and members in `FileHandler.java`
+- Condensed the backup logic in the `backupData` method in `FileHandler.java` to backup everything using a foreach-loop.
+- To ensure I did not break pre-exsiting funcitonality, I ran the given `TestDemo.java`, `LibraryManagementApp.java`, and `SimpleDemo.java` and they ran successfully. I also made sure to check 
+
+
 ## 🎯 Project Overview
 
 This Library Management System showcases core OOP concepts through a practical application that handles:
